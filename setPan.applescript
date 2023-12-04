@@ -1,4 +1,11 @@
 
+# in this script, I want to automatically set pan of a stereo track to -80 80..
+# the pan interface is a dolby 5.1
+# This is a first step, the goal at the end would be to set automatically to predefined value the pan for stereo - dolby - atmo..
+# But this is too slow (considering working on a movie having at least 500 tracks..)
+
+
+ 
 script V
 	property automationMenuItem : missing value
 	property editWindow : missing value
