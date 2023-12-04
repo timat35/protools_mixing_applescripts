@@ -100,44 +100,44 @@ tell application "finder"
 
 			log "test6"	
 				
-			-- set V's frontPan to text field "Front Pan Numerical" of V's panWindow
-			-- set test to value of attribute "AXValue" of V's frontPan 
-			-- perform action "AXPress" of V's frontPan
-			-- keystroke "-80"
-			-- key code 76
+			set V's frontPan to text field "Front Pan Numerical" of V's panWindow
+			set test to value of attribute "AXValue" of V's frontPan 
+			perform action "AXPress" of V's frontPan
+			keystroke "-80"
+			key code 76
 
-			-- log "test7"
+			log "test7"
 
-			-- set FRPan to text field "F/R Pan Numerical" of V's panWindow
-			-- perform action "AXPress" of FRPan
-			-- keystroke "100"
-			-- key code 76
+			set FRPan to text field "F/R Pan Numerical" of V's panWindow
+			perform action "AXPress" of FRPan
+			keystroke "100"
+			key code 76
 
-			-- log "test8"
+			log "test8"
 
-			-- set CenterPan to text field "Front Center % Numerical" of V's panWindow
-			-- perform action "AXPress" of CenterPan
-			-- repeat 1 times
-			-- 	key code 48
-			-- end repeat
-			-- keystroke "80"
-			-- key code 76
+			set CenterPan to text field "Front Center % Numerical" of V's panWindow
+			perform action "AXPress" of CenterPan
+			repeat 1 times
+				key code 48
+			end repeat
+			keystroke "80"
+			key code 76
 
-			-- perform action "AXPress" of CenterPan
-			-- repeat 3 times
-			-- 	key code 48
-			-- end repeat
-			-- keystroke "100"
-			-- key code 76
+			perform action "AXPress" of CenterPan
+			repeat 3 times
+				key code 48
+			end repeat
+			keystroke "100"
+			key code 76
 
-			-- click menu item "Write to All Enabled" of menu "Automation" of menu item "Automation" of menu "Edit" of menu bar item "Edit" of menu bar 1
+			click menu item "Write to All Enabled" of menu "Automation" of menu item "Automation" of menu "Edit" of menu bar item "Edit" of menu bar 1
 
-			-- click V's previewButton
-			-- perform action "AXPress" of V's outputButton
+			click V's previewButton
+			perform action "AXPress" of V's outputButton
 
-			-- if boolAutomationOpen is not true then 
-			-- 	click automationMenuItem
-			-- end if
+			if boolAutomationOpen is not true then 
+				click automationMenuItem
+			end if
 
 
 		end tell
