@@ -117,9 +117,7 @@ tell application "finder"
 
 			set CenterPan to text field "Front Center % Numerical" of V's panWindow
 			perform action "AXPress" of CenterPan
-			repeat 1 times
-				key code 48
-			end repeat
+			key code 48
 			keystroke "80"
 			key code 76
 
